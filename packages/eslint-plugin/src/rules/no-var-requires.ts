@@ -13,7 +13,8 @@ export default util.createRule<Options, MessageIds>({
       recommended: 'error',
     },
     messages: {
-      noVarReqs: 'Require statement not part of import statement.',
+      noVarReqs: `Require statement not part of import statement and won't be
+ typed. If you need inline requires, use dynamic imports instead.`,
     },
     schema: [],
   },
